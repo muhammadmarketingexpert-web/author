@@ -8,23 +8,22 @@
 
   <title>Contact AuthorVeyra | Author Support Enquiries</title>
 
-  <meta name="description" content="Contact AuthorVeyra to discuss your book, publishing ambitions or author-business challenges. Tell us what you want to achieve and where you need a way forward.">
+  <meta name="description" content="Contact AuthorVeyra to discuss your book, publishing goals, author business challenges or opportunities. Tell us what you want to achieve and how we may help.">
 
   <meta name="robots" content="index, follow">
   <link rel="canonical" href="https://authorveyr.com/contact.html">
+  <link rel="icon" href="authorveyra-logo.png">
+  <link rel="stylesheet" href="styles.css">
 
   <meta property="og:type" content="website">
   <meta property="og:title" content="Contact AuthorVeyra | Your Challenges. A Way Forward.">
-  <meta property="og:description" content="Start a conversation with AuthorVeyra about your author, book or publishing challenges.">
+  <meta property="og:description" content="Tell AuthorVeyra about your publishing goals, current challenges and what you want to achieve.">
   <meta property="og:url" content="https://authorveyr.com/contact.html">
-  <meta property="og:image" content="https://authorveyr.com/authorveyra-logo.png">
+  <meta property="og:site_name" content="AuthorVeyra">
 
   <meta name="twitter:card" content="summary">
   <meta name="twitter:title" content="Contact AuthorVeyra">
-  <meta name="twitter:description" content="Tell us what you want to achieve and what is standing in the way.">
-
-  <link rel="icon" href="authorveyra-logo.png">
-  <link rel="stylesheet" href="styles.css">
+  <meta name="twitter:description" content="Start a conversation about your author or publishing goals with AuthorVeyra.">
 
   <script type="application/ld+json">
   {
@@ -32,7 +31,7 @@
     "@type": "ContactPage",
     "name": "Contact AuthorVeyra",
     "url": "https://authorveyr.com/contact.html",
-    "description": "Contact AuthorVeyra to discuss author challenges, publishing ambitions and potential ways forward.",
+    "description": "Contact AuthorVeyra to discuss author challenges, publishing goals and opportunities.",
     "mainEntity": {
       "@type": "Organization",
       "name": "AuthorVeyra",
@@ -41,6 +40,138 @@
     }
   }
   </script>
+
+  <style>
+    .contact-intro {
+      max-width: 850px;
+    }
+
+    .contact-layout {
+      display: grid;
+      grid-template-columns: minmax(0, 1.5fr) minmax(260px, .8fr);
+      gap: 38px;
+      align-items: start;
+    }
+
+    .contact-form {
+      background: #fff;
+      padding: 34px;
+      border-radius: 14px;
+      box-shadow: 0 8px 35px rgba(20, 45, 35, .07);
+      border: 1px solid #e8ece8;
+    }
+
+    .contact-form label {
+      display: block;
+      font-weight: 600;
+      margin-bottom: 8px;
+      color: #173f32;
+      font-size: 14px;
+    }
+
+    .contact-form input,
+    .contact-form select,
+    .contact-form textarea {
+      width: 100%;
+      padding: 14px;
+      border: 1px solid #d9e0da;
+      border-radius: 7px;
+      background: #fff;
+      color: #25352d;
+      font: inherit;
+      font-size: 15px;
+      margin-bottom: 21px;
+      box-sizing: border-box;
+    }
+
+    .contact-form input:focus,
+    .contact-form select:focus,
+    .contact-form textarea:focus {
+      outline: 2px solid #d5ad55;
+      outline-offset: 2px;
+      border-color: #173f32;
+    }
+
+    .contact-form textarea {
+      min-height: 130px;
+      resize: vertical;
+    }
+
+    .contact-form .field-note {
+      display: block;
+      margin-top: -14px;
+      margin-bottom: 20px;
+      font-size: 12px;
+      color: #69776e;
+    }
+
+    .contact-form button {
+      border: 0;
+      cursor: pointer;
+      font: inherit;
+    }
+
+    .contact-form .form-note {
+      color: #68756d;
+      font-size: 13px;
+      line-height: 1.7;
+      margin-top: 16px;
+    }
+
+    .contact-side {
+      background: #173f32;
+      color: #fff;
+      padding: 30px;
+      border-radius: 14px;
+    }
+
+    .contact-side h2,
+    .contact-side h3 {
+      color: #fff;
+    }
+
+    .contact-side p {
+      color: #e2ebe4;
+      line-height: 1.8;
+    }
+
+    .contact-side a {
+      color: #e5c477;
+      overflow-wrap: anywhere;
+    }
+
+    .contact-side .side-item {
+      padding: 18px 0;
+      border-bottom: 1px solid rgba(255,255,255,.16);
+    }
+
+    .contact-side .side-item:last-child {
+      border-bottom: 0;
+    }
+
+    .contact-side strong {
+      display: block;
+      margin-bottom: 7px;
+      color: #e5c477;
+    }
+
+    .required-note {
+      font-size: 13px;
+      color: #69776e;
+      margin-bottom: 24px;
+    }
+
+    @media (max-width: 760px) {
+      .contact-layout {
+        grid-template-columns: 1fr;
+      }
+
+      .contact-form,
+      .contact-side {
+        padding: 23px;
+      }
+    }
+  </style>
 </head>
 
 <body>
@@ -53,13 +184,12 @@
     </div>
   </div>
 
-
   <!-- NAVIGATION -->
   <header class="nav">
     <div class="wrap navinner">
 
       <a class="brand" href="index.html">
-        <img src="authorveyra-logo.png" alt="AuthorVeyra logo">
+        <img src="authorveyra-logo.png" alt="AuthorVeyra official logo">
         <span class="brandname">
           AuthorVeyra
           <small>AUTHOR SOLUTIONS</small>
@@ -68,9 +198,9 @@
 
       <button
         class="menu"
+        type="button"
         aria-label="Toggle navigation"
         aria-expanded="false"
-        aria-controls="main-navigation"
         onclick="
           const links = document.querySelector('.links');
           const isOpen = links.classList.toggle('open');
@@ -79,7 +209,7 @@
         ☰
       </button>
 
-      <nav class="links" id="main-navigation" aria-label="Main navigation">
+      <nav class="links">
         <a href="index.html">Home</a>
         <a href="about.html">About</a>
         <a href="challenges.html">Challenges</a>
@@ -88,9 +218,7 @@
         <a class="active" href="contact.html" aria-current="page">Contact</a>
       </nav>
 
-      <a class="navcta" href="mailto:info@authorveyr.com?subject=Enquiry%20for%20AuthorVeyra">
-        Start a conversation
-      </a>
+      <a class="navcta" href="#enquiry-form">Start a conversation</a>
 
     </div>
   </header>
@@ -100,374 +228,242 @@
 
     <!-- PAGE INTRODUCTION -->
     <section class="pagehero">
-      <div class="wrap">
+      <div class="wrap contact-intro">
 
         <div class="crumb">Contact AuthorVeyra</div>
 
-        <h1>
-          Tell us what you want to make possible.
-        </h1>
+        <h1>Tell us what you want to make possible.</h1>
 
         <p>
-          Whether you are working towards a publishing ambition,
-          facing a challenge with your book or considering what
-          should come next in your author journey, this is a place
-          to begin the conversation.
+          Every author has different goals, circumstances and challenges.
+          Whether you need to address an issue with your book, explore a
+          publishing opportunity or work towards a wider ambition, we
+          would like to understand what you have in mind.
+        </p>
+
+        <p>
+          You do not need to know exactly what support you need before
+          contacting us. Start by telling us about your situation.
         </p>
 
       </div>
     </section>
 
 
-    <!-- CONTACT INTRODUCTION -->
-    <section class="section">
-      <div class="wrap split">
-
-        <div>
-
-          <div class="eyebrow">Start with your situation</div>
-
-          <h2>
-            You do not need to know exactly what solution you need.
-          </h2>
-
-          <p class="lead">
-            Every enquiry begins with understanding the author,
-            the ambition behind the work and the challenge
-            that needs attention.
-          </p>
-
-          <p>
-            You might know precisely what you want to accomplish.
-            Perhaps you have identified a particular obstacle.
-            Or you may simply feel that your book, publishing
-            project or wider author business could be moving
-            further than it currently is.
-          </p>
-
-          <p>
-            Whatever brings you here, explain your situation
-            in your own words. We will consider the information
-            you share and whether AuthorVeyra may be able
-            to contribute directly or identify an appropriate
-            way forward.
-          </p>
-
-          <a
-            class="btn"
-            href="mailto:info@authorveyr.com?subject=Enquiry%20for%20AuthorVeyra">
-            Email AuthorVeyra
-          </a>
-
-        </div>
-
-
-        <div class="quote-panel">
-
-          <p>
-            “You do not have to arrive with all the answers.
-            A clear understanding of the situation is where
-            meaningful progress begins.”
-          </p>
-
-          <p style="font:13px 'DM Sans';color:#64736a;margin-top:22px">
-            THE AUTHORVEYRA PRINCIPLE
-          </p>
-
-        </div>
-
-      </div>
-    </section>
-
-
-    <!-- WHAT TO INCLUDE -->
-    <section class="section white">
-      <div class="wrap">
-
-        <div class="section-head">
-
-          <div class="eyebrow">Making the conversation useful</div>
-
-          <h2>
-            What would be helpful to tell us?
-          </h2>
-
-          <p class="lead">
-            There is no complicated application process.
-            A little context can help us understand your
-            requirements and consider the next step.
-          </p>
-
-        </div>
-
-
-        <div class="grid3">
-
-          <div class="tile">
-
-            <div class="num">01 / YOUR WORK</div>
-
-            <h3>Tell us about yourself</h3>
-
-            <p>
-              Introduce yourself and, where relevant,
-              share your book title, author website,
-              publishing background or current project.
-            </p>
-
-          </div>
-
-
-          <div class="tile">
-
-            <div class="num">02 / YOUR AMBITION</div>
-
-            <h3>Explain what you want to achieve</h3>
-
-            <p>
-              Tell us what you would like to accomplish,
-              whether it concerns your book, readership,
-              publishing plans or wider professional goals.
-            </p>
-
-          </div>
-
-
-          <div class="tile">
-
-            <div class="num">03 / YOUR CHALLENGE</div>
-
-            <h3>Describe what is getting in the way</h3>
-
-            <p>
-              Share the difficulty, unanswered question
-              or opportunity you are trying to understand.
-              You do not need to have a solution already.
-            </p>
-
-          </div>
-
-        </div>
-
-      </div>
-    </section>
-
-
-    <!-- DIRECT CONTACT -->
-    <section class="section green">
-      <div class="wrap split">
-
-        <div>
-
-          <div class="eyebrow">Direct communication</div>
-
-          <h2>
-            Start a conversation with AuthorVeyra.
-          </h2>
-
-          <p class="lead">
-            The most direct way to reach us is by email.
-            Share as much relevant context as you feel
-            comfortable providing.
-          </p>
-
-          <p>
-            Your message can be brief or detailed.
-            If your enquiry concerns a particular book
-            or publishing project, including a relevant
-            link can help us understand the context.
-          </p>
-
-          <a
-            class="btn light"
-            href="mailto:info@authorveyr.com?subject=Enquiry%20for%20AuthorVeyra">
-            Send your enquiry
-          </a>
-
-        </div>
-
-
-        <div class="quote-panel">
-
-          <div class="eyebrow">Email</div>
-
-          <h3 style="margin-bottom:12px">
-            info@authorveyr.com
-          </h3>
-
-          <p>
-            For author enquiries, publishing discussions
-            and questions about working with AuthorVeyra.
-          </p>
-
-          <a
-            href="mailto:info@authorveyr.com"
-            style="display:inline-block;margin-top:18px;font-weight:700">
-            Write to us →
-          </a>
-
-        </div>
-
-      </div>
-    </section>
-
-
-    <!-- EXPECTATIONS -->
+    <!-- CONTACT FORM -->
     <section class="section">
       <div class="wrap">
 
         <div class="section-head">
+          <div class="eyebrow">Start a conversation</div>
 
-          <div class="eyebrow">What happens next</div>
-
-          <h2>
-            A considered response begins with your enquiry.
-          </h2>
+          <h2>Help us understand your situation.</h2>
 
           <p class="lead">
-            We want the first conversation to establish
-            whether there is a genuine fit between your
-            requirements and what AuthorVeyra can contribute.
+            Share a little information about yourself, your work and
+            what you would like to achieve. The more context you provide,
+            the easier it will be to understand your enquiry.
           </p>
-
         </div>
 
 
-        <div class="step">
+        <div class="contact-layout">
 
-          <div class="stepno">01</div>
+          <!-- AUTHOR ENQUIRY FORM -->
+          <div class="contact-form" id="enquiry-form">
 
-          <div>
-            <h3>We consider your message</h3>
+            <h2>Author enquiry form</h2>
 
-            <p>
-              We review the information you provide
-              to understand your objectives, current
-              situation and the challenge involved.
+            <p class="required-note">
+              Fields marked with * are required.
             </p>
+
+            <form id="authorEnquiryForm">
+
+              <label for="fullName">Your full name *</label>
+              <input
+                type="text"
+                id="fullName"
+                name="Full name"
+                placeholder="Enter your full name"
+                autocomplete="name"
+                required>
+
+
+              <label for="email">Email address *</label>
+              <input
+                type="email"
+                id="email"
+                name="Email address"
+                placeholder="you@example.com"
+                autocomplete="email"
+                required>
+
+
+              <label for="bookTitle">Book title</label>
+              <input
+                type="text"
+                id="bookTitle"
+                name="Book title"
+                placeholder="Enter your book title (if applicable)">
+
+              <span class="field-note">
+                Optional — complete this if your enquiry concerns a particular book.
+              </span>
+
+
+              <label for="bookLink">Book website, Amazon page or other relevant link</label>
+              <input
+                type="url"
+                id="bookLink"
+                name="Book or website link"
+                placeholder="https://">
+
+              <span class="field-note">
+                Optional — share a link that will help us understand your work.
+              </span>
+
+
+              <label for="goal">What are you hoping to achieve? *</label>
+              <textarea
+                id="goal"
+                name="Your goals"
+                placeholder="Tell us what you would like to accomplish with your book, publishing work or author career..."
+                required></textarea>
+
+
+              <label for="challenge">What is your main challenge at the moment? *</label>
+              <select id="challenge" name="Main challenge" required>
+                <option value="">Select the closest option</option>
+                <option>Book visibility and discoverability</option>
+                <option>Reaching the right readers</option>
+                <option>Book presentation and positioning</option>
+                <option>Marketing and commercial growth</option>
+                <option>Publishing strategy and decisions</option>
+                <option>International publishing opportunities</option>
+                <option>Distribution and fulfilment</option>
+                <option>Partnerships and business development</option>
+                <option>Project planning and coordination</option>
+                <option>Several connected challenges</option>
+                <option>Something else</option>
+              </select>
+
+
+              <label for="details">Additional information</label>
+              <textarea
+                id="details"
+                name="Additional information"
+                placeholder="Is there anything else you would like us to know?"></textarea>
+
+
+              <button class="btn" type="submit">
+                Submit your enquiry
+              </button>
+
+              <p class="form-note">
+                Selecting Submit will open your email application with
+                your enquiry prepared as a message to AuthorVeyra.
+                You will be able to review it before sending.
+              </p>
+
+            </form>
+
           </div>
 
-        </div>
 
+          <!-- CONTACT INFORMATION -->
+          <aside class="contact-side">
 
-        <div class="step">
+            <div class="eyebrow">Get in touch</div>
 
-          <div class="stepno">02</div>
-
-          <div>
-            <h3>We clarify what is needed</h3>
+            <h2>Begin with a conversation.</h2>
 
             <p>
-              Where further information is necessary,
-              we may ask questions to understand the
-              requirements more accurately.
+              You do not need to arrive with a complete plan or a
+              clearly defined solution. Tell us what matters to you
+              and what you are trying to move forward.
             </p>
-          </div>
+
+
+            <div class="side-item">
+              <strong>Email</strong>
+              <a href="mailto:info@authorveyr.com">
+                info@authorveyr.com
+              </a>
+            </div>
+
+
+            <div class="side-item">
+              <strong>What happens next?</strong>
+              <p>
+                We will review the information you share and consider
+                the nature of your enquiry, the requirements involved
+                and the most appropriate next step.
+              </p>
+            </div>
+
+
+            <div class="side-item">
+              <strong>Not sure what to ask?</strong>
+              <p>
+                That is perfectly fine. You can explain the situation
+                in your own words. You do not need to diagnose the
+                problem before contacting us.
+              </p>
+            </div>
+
+
+            <div class="side-item">
+              <strong>Our approach</strong>
+              <p>
+                We believe a useful response begins with understanding
+                the author's actual needs, rather than assuming that
+                everyone requires the same solution.
+              </p>
+              <a href="approach.html">Discover our approach →</a>
+            </div>
+
+          </aside>
 
         </div>
-
-
-        <div class="step">
-
-          <div class="stepno">03</div>
-
-          <div>
-            <h3>We discuss a possible way forward</h3>
-
-            <p>
-              If there is a suitable opportunity to work
-              together, we can discuss the proposed scope,
-              responsibilities, expectations and relevant
-              commercial arrangements before any commitment.
-            </p>
-          </div>
-
-        </div>
-
-        <p class="lead" style="margin-top:28px">
-          Sending an enquiry does not create an obligation
-          to purchase or proceed with any work.
-        </p>
 
       </div>
     </section>
 
 
-    <!-- RELATED PAGES -->
+    <!-- REASSURANCE SECTION -->
     <section class="section white">
-      <div class="wrap">
+      <div class="wrap split">
 
-        <div class="section-head">
+        <div>
+          <div class="eyebrow">Your situation comes first</div>
 
-          <div class="eyebrow">Get to know AuthorVeyra</div>
-
-          <h2>
-            Understand how we think and work.
-          </h2>
+          <h2>There is no need to have everything figured out.</h2>
 
           <p class="lead">
-            If you would like to learn more before contacting us,
-            these pages explain our purpose, approach and the
-            wider challenges we consider.
+            Your enquiry does not need to fit into a predefined
+            service category.
           </p>
 
+          <p>
+            We want to understand your objectives, the difficulties
+            you are encountering and the outcome you are working
+            towards. From there, we can consider whether the
+            requirements are within our capabilities or whether
+            specialist involvement may be appropriate.
+          </p>
+
+          <a class="btn" href="about.html">
+            Learn about AuthorVeyra
+          </a>
         </div>
 
 
-        <div class="grid3">
-
-          <div class="tile">
-
-            <div class="num">ABOUT AUTHORVEYRA</div>
-
-            <h3>Who we are</h3>
-
-            <p>
-              Learn about AuthorVeyra, our purpose
-              and the principles behind our work
-              with authors.
-            </p>
-
-            <a href="about.html">Discover AuthorVeyra →</a>
-
-          </div>
-
-
-          <div class="tile">
-
-            <div class="num">OUR APPROACH</div>
-
-            <h3>How we work</h3>
-
-            <p>
-              Understand how we examine individual
-              situations and develop considered
-              responses around author goals.
-            </p>
-
-            <a href="approach.html">Explore our approach →</a>
-
-          </div>
-
-
-          <div class="tile">
-
-            <div class="num">PUBLISHING SUPPORT</div>
-
-            <h3>The wider publishing journey</h3>
-
-            <p>
-              Explore publishing strategy, international
-              opportunities, distribution and connected
-              project requirements.
-            </p>
-
-            <a href="publishing-support.html">
-              Explore publishing support →
-            </a>
-
-          </div>
-
+        <div class="quote-panel">
+          <p>
+            “The right way forward begins with understanding
+            what matters to the author.”
+          </p>
         </div>
 
       </div>
@@ -476,24 +472,19 @@
 
     <!-- FINAL CTA -->
     <section class="section">
-      <div class="wrap" style="text-align:center;max-width:780px">
+      <div class="wrap" style="text-align:center;max-width:760px">
 
         <div class="eyebrow">Your challenges. A way forward.</div>
 
-        <h2>
-          Every meaningful conversation has a starting point.
-        </h2>
+        <h2>Whenever you are ready, start the conversation.</h2>
 
         <p class="lead">
-          Tell us where you are, what you hope to achieve
-          and what you would like to change. We can begin
-          by understanding the situation together.
+          Tell us where you are, what you want to achieve and
+          what is standing in the way.
         </p>
 
-        <a
-          class="btn"
-          href="mailto:info@authorveyr.com?subject=Enquiry%20for%20AuthorVeyra">
-          Contact AuthorVeyra
+        <a class="btn" href="#enquiry-form">
+          Complete the enquiry form
         </a>
 
       </div>
@@ -504,39 +495,34 @@
 
   <!-- FOOTER -->
   <footer class="footer">
-
     <div class="wrap">
 
       <div class="footgrid">
 
+        <!-- COMPANY -->
         <div>
-
           <a class="brand" href="index.html">
-
             <img src="authorveyra-logo.png" alt="">
 
             <span class="brandname" style="color:white">
               AuthorVeyra
               <small style="color:#d5ad55">AUTHOR SOLUTIONS</small>
             </span>
-
           </a>
 
           <p style="max-width:370px;margin-top:22px">
-            We begin with the author: the ambition behind
-            the work, the challenge in the way and the
-            possibilities worth exploring.
+            We begin with the author: the ambition behind the work,
+            the challenge in the way and the possibilities worth exploring.
           </p>
 
           <div class="tagline">
             Your challenges. A way forward.
           </div>
-
         </div>
 
 
+        <!-- EXPLORE -->
         <div>
-
           <h4>Explore</h4>
 
           <div class="footlinks">
@@ -547,17 +533,15 @@
             <a href="publishing-support.html">Publishing Support</a>
             <a href="contact.html">Contact</a>
           </div>
-
         </div>
 
 
+        <!-- SOCIAL -->
         <div>
-
           <h4>Connect with us</h4>
 
           <p>
-            Follow AuthorVeyra for ideas, updates
-            and perspectives for authors.
+            Follow AuthorVeyra for ideas, updates and perspectives for authors.
           </p>
 
           <div class="social-links">
@@ -569,9 +553,13 @@
               rel="noopener noreferrer"
               aria-label="AuthorVeyra on TikTok">
 
-              TikTok
+              <svg viewBox="0 0 24 24" aria-hidden="true">
+                <path d="M19.59 6.69a4.83 4.83 0 0 1-3.77-4.25V2h-3.2v13.67a2.9 2.9 0 1 1-2.9-2.9c.3 0 .6.05.87.13V9.63a6.1 6.1 0 1 0 5.23 6.04V8.72a8 8 0 0 0 4.67 1.5V7.04c-.3 0-.6-.12-.9-.35Z"/>
+              </svg>
 
+              TikTok
             </a>
+
 
             <a
               class="social-link"
@@ -580,39 +568,87 @@
               rel="noopener noreferrer"
               aria-label="AuthorVeyra on Substack">
 
-              Substack
+              <svg viewBox="0 0 24 24" aria-hidden="true">
+                <path d="M3 3h18v2H3V3Zm0 4h18v2H3V7Zm0 4h18v2H3v-2Zm0 4 9 6 9-6v-2H3v2Z"/>
+              </svg>
 
+              Substack
             </a>
 
           </div>
-
         </div>
 
 
+        <!-- INFORMATION -->
         <div>
-
           <h4>Information</h4>
 
           <div class="footlinks">
             <a href="refund-policy.html">Refund Policy</a>
-            <a href="terms.html">Terms &amp; Conditions</a>
-            <a href="mailto:info@authorveyr.com">Email AuthorVeyra</a>
+            <a href="terms.html">Terms & Conditions</a>
           </div>
 
+          <p style="margin-top:20px">
+            <a href="mailto:info@authorveyr.com">
+              info@authorveyr.com
+            </a>
+          </p>
         </div>
 
       </div>
 
 
-      <div class="footbottom">
+      <div class="copyright">
         <p>
           © 2026 AuthorVeyra. All rights reserved.
         </p>
       </div>
 
     </div>
-
   </footer>
+
+
+  <!-- EMAIL SUBMISSION -->
+  <script>
+    document.getElementById("authorEnquiryForm").addEventListener("submit", function(event) {
+      event.preventDefault();
+
+      const form = this;
+
+      if (!form.reportValidity()) {
+        return;
+      }
+
+      const data = new FormData(form);
+
+      const subject = "New AuthorVeyra Website Enquiry";
+
+      const message = [
+        "NEW AUTHORVEYRA WEBSITE ENQUIRY",
+        "",
+        "Full name: " + (data.get("Full name") || ""),
+        "Email address: " + (data.get("Email address") || ""),
+        "Book title: " + (data.get("Book title") || "Not provided"),
+        "Book or website link: " + (data.get("Book or website link") || "Not provided"),
+        "",
+        "AUTHOR'S GOALS:",
+        data.get("Your goals") || "",
+        "",
+        "MAIN CHALLENGE:",
+        data.get("Main challenge") || "",
+        "",
+        "ADDITIONAL INFORMATION:",
+        data.get("Additional information") || ""
+      ].join("\n");
+
+      const mailto =
+        "mailto:info@authorveyr.com" +
+        "?subject=" + encodeURIComponent(subject) +
+        "&body=" + encodeURIComponent(message);
+
+      window.location.href = mailto;
+    });
+  </script>
 
 </body>
 </html>
