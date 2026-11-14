@@ -4,26 +4,28 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="theme-color" content="#173f32">
 
-  <title>Contact AuthorVeyra | Author Support Enquiries</title>
+  <title>Contact AuthorVeyra | Discuss Your Author and Publishing Goals</title>
 
-  <meta name="description" content="Contact AuthorVeyra to discuss your book, publishing goals, author business challenges or opportunities. Tell us what you want to achieve and how we may help.">
+  <meta name="description" content="Contact AuthorVeyra to discuss your book, publishing ambitions, business challenges or opportunities. Tell us what you want to achieve and how we may help.">
 
   <meta name="robots" content="index, follow">
+  <meta name="theme-color" content="#173f32">
+
   <link rel="canonical" href="https://authorveyr.com/contact.html">
   <link rel="icon" href="authorveyra-logo.png">
   <link rel="stylesheet" href="styles.css">
 
   <meta property="og:type" content="website">
   <meta property="og:title" content="Contact AuthorVeyra | Your Challenges. A Way Forward.">
-  <meta property="og:description" content="Tell AuthorVeyra about your publishing goals, current challenges and what you want to achieve.">
+  <meta property="og:description" content="Start a conversation with AuthorVeyra about your book, publishing goals and the challenges you want to address.">
   <meta property="og:url" content="https://authorveyr.com/contact.html">
   <meta property="og:site_name" content="AuthorVeyra">
+  <meta property="og:image" content="https://authorveyr.com/authorveyra-logo.png">
 
   <meta name="twitter:card" content="summary">
   <meta name="twitter:title" content="Contact AuthorVeyra">
-  <meta name="twitter:description" content="Start a conversation about your author or publishing goals with AuthorVeyra.">
+  <meta name="twitter:description" content="Tell us what you are working towards and what is standing in the way.">
 
   <script type="application/ld+json">
   {
@@ -42,133 +44,280 @@
   </script>
 
   <style>
-    .contact-intro {
+    .contact-hero {
+      padding: 85px 0 75px;
+      background: #173f32;
+      color: #fff;
+    }
+
+    .contact-hero .eyebrow {
+      color: #d5ad55;
+    }
+
+    .contact-hero h1 {
       max-width: 850px;
+      margin: 15px 0 20px;
+      color: #fff;
+    }
+
+    .contact-hero p {
+      max-width: 720px;
+      color: rgba(255,255,255,.86);
+      font-size: 17px;
+      line-height: 1.8;
+    }
+
+    .contact-main {
+      padding: 75px 0 90px;
+      background: #f7f5ef;
     }
 
     .contact-layout {
       display: grid;
-      grid-template-columns: minmax(0, 1.5fr) minmax(260px, .8fr);
-      gap: 38px;
+      grid-template-columns: minmax(0, 1.55fr) minmax(270px, .8fr);
+      gap: 35px;
       align-items: start;
     }
 
-    .contact-form {
+    .contact-card,
+    .contact-sidebar {
       background: #fff;
-      padding: 34px;
-      border-radius: 14px;
-      box-shadow: 0 8px 35px rgba(20, 45, 35, .07);
-      border: 1px solid #e8ece8;
+      border: 1px solid #e9e6dc;
+      border-radius: 15px;
+      padding: 36px;
+      box-shadow: 0 12px 35px rgba(25, 48, 38, .055);
     }
 
-    .contact-form label {
-      display: block;
-      font-weight: 600;
-      margin-bottom: 8px;
+    .contact-card h2 {
+      margin-top: 0;
       color: #173f32;
+      font-size: 27px;
+    }
+
+    .contact-intro {
+      color: #66736c;
+      line-height: 1.8;
+      margin-bottom: 30px;
+    }
+
+    .form-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 22px;
+    }
+
+    .form-field {
+      margin-bottom: 22px;
+      min-width: 0;
+    }
+
+    .form-field.full {
+      grid-column: 1 / -1;
+    }
+
+    .form-field label {
+      display: block;
+      margin-bottom: 9px;
+      color: #233b30;
+      font-weight: 600;
       font-size: 14px;
     }
 
-    .contact-form input,
-    .contact-form select,
-    .contact-form textarea {
-      width: 100%;
-      padding: 14px;
-      border: 1px solid #d9e0da;
-      border-radius: 7px;
-      background: #fff;
-      color: #25352d;
-      font: inherit;
-      font-size: 15px;
-      margin-bottom: 21px;
-      box-sizing: border-box;
+    .form-field label span {
+      color: #a66d24;
     }
 
-    .contact-form input:focus,
-    .contact-form select:focus,
-    .contact-form textarea:focus {
-      outline: 2px solid #d5ad55;
-      outline-offset: 2px;
+    .form-field input,
+    .form-field select,
+    .form-field textarea {
+      display: block;
+      width: 100%;
+      box-sizing: border-box;
+      border: 1px solid #d9ded8;
+      border-radius: 8px;
+      padding: 14px 15px;
+      background: #fff;
+      color: #24372e;
+      font: inherit;
+      font-size: 14px;
+      transition: border-color .2s, box-shadow .2s;
+    }
+
+    .form-field input,
+    .form-field select {
+      min-height: 49px;
+    }
+
+    .form-field textarea {
+      min-height: 145px;
+      resize: vertical;
+      line-height: 1.65;
+    }
+
+    .form-field input:focus,
+    .form-field select:focus,
+    .form-field textarea:focus {
+      outline: none;
+      border-color: #39745a;
+      box-shadow: 0 0 0 3px rgba(57, 116, 90, .12);
+    }
+
+    .form-field input::placeholder,
+    .form-field textarea::placeholder {
+      color: #9aa49d;
+    }
+
+    .field-hint {
+      display: block;
+      margin-top: 7px;
+      color: #7a857e;
+      font-size: 12px;
+      line-height: 1.6;
+    }
+
+    .form-submit {
+      display: inline-flex;
+      justify-content: center;
+      align-items: center;
+      gap: 10px;
+      width: 100%;
+      min-height: 54px;
+      margin-top: 5px;
+      border: 0;
+      border-radius: 7px;
+      background: #173f32;
+      color: #fff;
+      font: inherit;
+      font-size: 15px;
+      font-weight: 700;
+      cursor: pointer;
+      transition: background .2s, transform .2s;
+    }
+
+    .form-submit:hover {
+      background: #245c46;
+      transform: translateY(-1px);
+    }
+
+    .form-note {
+      margin: 17px 0 0;
+      color: #78827b;
+      font-size: 12px;
+      line-height: 1.7;
+      text-align: center;
+    }
+
+    .contact-sidebar {
+      background: #173f32;
+      color: #fff;
       border-color: #173f32;
     }
 
-    .contact-form textarea {
-      min-height: 130px;
-      resize: vertical;
-    }
-
-    .contact-form .field-note {
-      display: block;
-      margin-top: -14px;
-      margin-bottom: 20px;
-      font-size: 12px;
-      color: #69776e;
-    }
-
-    .contact-form button {
-      border: 0;
-      cursor: pointer;
-      font: inherit;
-    }
-
-    .contact-form .form-note {
-      color: #68756d;
-      font-size: 13px;
-      line-height: 1.7;
-      margin-top: 16px;
-    }
-
-    .contact-side {
-      background: #173f32;
-      color: #fff;
-      padding: 30px;
-      border-radius: 14px;
-    }
-
-    .contact-side h2,
-    .contact-side h3 {
+    .contact-sidebar h2,
+    .contact-sidebar h3 {
       color: #fff;
     }
 
-    .contact-side p {
-      color: #e2ebe4;
+    .contact-sidebar p {
+      color: rgba(255,255,255,.8);
+      font-size: 14px;
       line-height: 1.8;
     }
 
-    .contact-side a {
-      color: #e5c477;
+    .sidebar-block {
+      padding: 23px 0;
+      border-bottom: 1px solid rgba(255,255,255,.15);
+    }
+
+    .sidebar-block:last-child {
+      border-bottom: 0;
+      padding-bottom: 0;
+    }
+
+    .sidebar-label {
+      display: block;
+      margin-bottom: 9px;
+      color: #d5ad55;
+      font-size: 11px;
+      font-weight: 700;
+      letter-spacing: 1.4px;
+      text-transform: uppercase;
+    }
+
+    .contact-sidebar a {
+      color: #fff;
+      text-decoration: underline;
+      text-underline-offset: 4px;
       overflow-wrap: anywhere;
     }
 
-    .contact-side .side-item {
-      padding: 18px 0;
-      border-bottom: 1px solid rgba(255,255,255,.16);
+    .contact-sidebar ul {
+      padding-left: 19px;
+      color: rgba(255,255,255,.82);
+      font-size: 14px;
+      line-height: 2;
     }
 
-    .contact-side .side-item:last-child {
-      border-bottom: 0;
+    .contact-principle {
+      margin-top: 25px;
+      padding: 22px;
+      border-left: 3px solid #d5ad55;
+      background: rgba(255,255,255,.07);
+      color: #fff;
+      font-size: 15px;
+      line-height: 1.8;
     }
 
-    .contact-side strong {
-      display: block;
-      margin-bottom: 7px;
-      color: #e5c477;
+    .contact-next {
+      padding: 75px 0;
+      text-align: center;
+      background: #fff;
     }
 
-    .required-note {
-      font-size: 13px;
-      color: #69776e;
-      margin-bottom: 24px;
+    .contact-next .wrap {
+      max-width: 760px;
     }
 
-    @media (max-width: 760px) {
+    .contact-next h2 {
+      color: #173f32;
+    }
+
+    .contact-next p {
+      color: #65736b;
+      line-height: 1.8;
+    }
+
+    @media (max-width: 850px) {
       .contact-layout {
         grid-template-columns: 1fr;
       }
 
-      .contact-form,
-      .contact-side {
-        padding: 23px;
+      .contact-sidebar {
+        order: 2;
+      }
+    }
+
+    @media (max-width: 600px) {
+      .contact-hero {
+        padding: 65px 0 55px;
+      }
+
+      .contact-main {
+        padding: 45px 0 60px;
+      }
+
+      .contact-card,
+      .contact-sidebar {
+        padding: 24px 20px;
+      }
+
+      .form-grid {
+        grid-template-columns: 1fr;
+        gap: 0;
+      }
+
+      .form-field.full {
+        grid-column: auto;
       }
     }
   </style>
@@ -184,6 +333,7 @@
     </div>
   </div>
 
+
   <!-- NAVIGATION -->
   <header class="nav">
     <div class="wrap navinner">
@@ -198,9 +348,9 @@
 
       <button
         class="menu"
-        type="button"
         aria-label="Toggle navigation"
         aria-expanded="false"
+        aria-controls="main-navigation"
         onclick="
           const links = document.querySelector('.links');
           const isOpen = links.classList.toggle('open');
@@ -209,13 +359,13 @@
         ☰
       </button>
 
-      <nav class="links">
+      <nav class="links" id="main-navigation">
         <a href="index.html">Home</a>
         <a href="about.html">About</a>
         <a href="challenges.html">Challenges</a>
         <a href="approach.html">Our Approach</a>
         <a href="publishing-support.html">Publishing Support</a>
-        <a class="active" href="contact.html" aria-current="page">Contact</a>
+        <a class="active" href="contact.html">Contact</a>
       </nav>
 
       <a class="navcta" href="#enquiry-form">Start a conversation</a>
@@ -226,24 +376,19 @@
 
   <main>
 
-    <!-- PAGE INTRODUCTION -->
-    <section class="pagehero">
-      <div class="wrap contact-intro">
+    <!-- CONTACT HERO -->
+    <section class="contact-hero">
+      <div class="wrap">
 
-        <div class="crumb">Contact AuthorVeyra</div>
+        <div class="eyebrow">Let's begin with your situation</div>
 
-        <h1>Tell us what you want to make possible.</h1>
-
-        <p>
-          Every author has different goals, circumstances and challenges.
-          Whether you need to address an issue with your book, explore a
-          publishing opportunity or work towards a wider ambition, we
-          would like to understand what you have in mind.
-        </p>
+        <h1>Tell us what you want to achieve. We'll start by understanding what stands in the way.</h1>
 
         <p>
-          You do not need to know exactly what support you need before
-          contacting us. Start by telling us about your situation.
+          Every author has different ambitions, circumstances and
+          challenges. Whether you have a question about your book,
+          a publishing decision, an opportunity you want to explore
+          or a wider business goal, this is where the conversation begins.
         </p>
 
       </div>
@@ -251,119 +396,212 @@
 
 
     <!-- CONTACT FORM -->
-    <section class="section">
+    <section class="contact-main" id="enquiry-form">
       <div class="wrap">
-
-        <div class="section-head">
-          <div class="eyebrow">Start a conversation</div>
-
-          <h2>Help us understand your situation.</h2>
-
-          <p class="lead">
-            Share a little information about yourself, your work and
-            what you would like to achieve. The more context you provide,
-            the easier it will be to understand your enquiry.
-          </p>
-        </div>
-
 
         <div class="contact-layout">
 
-          <!-- AUTHOR ENQUIRY FORM -->
-          <div class="contact-form" id="enquiry-form">
+          <!-- FORM -->
+          <div class="contact-card">
 
-            <h2>Author enquiry form</h2>
+            <div class="eyebrow">Your enquiry</div>
 
-            <p class="required-note">
-              Fields marked with * are required.
+            <h2>Let's understand what you need.</h2>
+
+            <p class="contact-intro">
+              Share a little about yourself, your work and what you
+              are hoping to accomplish. You do not need to have
+              everything figured out. The more context you provide,
+              the better we can understand your situation.
             </p>
 
-            <form id="authorEnquiryForm">
 
-              <label for="fullName">Your full name *</label>
+            <form
+              action="https://formsubmit.co/info@authorveyr.com"
+              method="POST"
+            >
+
+              <!-- FORMSUBMIT SETTINGS -->
               <input
-                type="text"
-                id="fullName"
-                name="Full name"
-                placeholder="Enter your full name"
-                autocomplete="name"
-                required>
+                type="hidden"
+                name="_subject"
+                value="New AuthorVeyra Website Enquiry"
+              >
 
-
-              <label for="email">Email address *</label>
               <input
-                type="email"
-                id="email"
-                name="Email address"
-                placeholder="you@example.com"
-                autocomplete="email"
-                required>
+                type="hidden"
+                name="_template"
+                value="table"
+              >
 
-
-              <label for="bookTitle">Book title</label>
               <input
-                type="text"
-                id="bookTitle"
-                name="Book title"
-                placeholder="Enter your book title (if applicable)">
+                type="hidden"
+                name="_captcha"
+                value="true"
+              >
 
-              <span class="field-note">
-                Optional — complete this if your enquiry concerns a particular book.
-              </span>
-
-
-              <label for="bookLink">Book website, Amazon page or other relevant link</label>
-              <input
-                type="url"
-                id="bookLink"
-                name="Book or website link"
-                placeholder="https://">
-
-              <span class="field-note">
-                Optional — share a link that will help us understand your work.
-              </span>
+              <!-- Spam protection: leave this field empty -->
+              <div style="position:absolute;left:-9999px" aria-hidden="true">
+                <label for="website-check">Leave this field empty</label>
+                <input
+                  type="text"
+                  id="website-check"
+                  name="_honey"
+                  tabindex="-1"
+                  autocomplete="off"
+                >
+              </div>
 
 
-              <label for="goal">What are you hoping to achieve? *</label>
-              <textarea
-                id="goal"
-                name="Your goals"
-                placeholder="Tell us what you would like to accomplish with your book, publishing work or author career..."
-                required></textarea>
+              <div class="form-grid">
+
+                <!-- FULL NAME -->
+                <div class="form-field">
+                  <label for="full-name">
+                    Full name <span>*</span>
+                  </label>
+
+                  <input
+                    type="text"
+                    id="full-name"
+                    name="Full name"
+                    placeholder="Enter your full name"
+                    autocomplete="name"
+                    required
+                  >
+                </div>
 
 
-              <label for="challenge">What is your main challenge at the moment? *</label>
-              <select id="challenge" name="Main challenge" required>
-                <option value="">Select the closest option</option>
-                <option>Book visibility and discoverability</option>
-                <option>Reaching the right readers</option>
-                <option>Book presentation and positioning</option>
-                <option>Marketing and commercial growth</option>
-                <option>Publishing strategy and decisions</option>
-                <option>International publishing opportunities</option>
-                <option>Distribution and fulfilment</option>
-                <option>Partnerships and business development</option>
-                <option>Project planning and coordination</option>
-                <option>Several connected challenges</option>
-                <option>Something else</option>
-              </select>
+                <!-- EMAIL -->
+                <div class="form-field">
+                  <label for="email">
+                    Email address <span>*</span>
+                  </label>
+
+                  <input
+                    type="email"
+                    id="email"
+                    name="Email address"
+                    placeholder="you@example.com"
+                    autocomplete="email"
+                    required
+                  >
+                </div>
 
 
-              <label for="details">Additional information</label>
-              <textarea
-                id="details"
-                name="Additional information"
-                placeholder="Is there anything else you would like us to know?"></textarea>
+                <!-- BOOK TITLE -->
+                <div class="form-field">
+                  <label for="book-title">
+                    Book title
+                  </label>
+
+                  <input
+                    type="text"
+                    id="book-title"
+                    name="Book title"
+                    placeholder="Enter your book title"
+                  >
+                </div>
 
 
-              <button class="btn" type="submit">
-                Submit your enquiry
+                <!-- BOOK LINK -->
+                <div class="form-field">
+                  <label for="book-link">
+                    Book website or online listing
+                  </label>
+
+                  <input
+                    type="url"
+                    id="book-link"
+                    name="Book website or listing"
+                    placeholder="https://..."
+                  >
+
+                  <span class="field-hint">
+                    You may share your Amazon page, author website
+                    or another relevant link.
+                  </span>
+                </div>
+
+
+                <!-- AUTHOR GOALS -->
+                <div class="form-field full">
+                  <label for="goals">
+                    What would you like to achieve? <span>*</span>
+                  </label>
+
+                  <textarea
+                    id="goals"
+                    name="Author goals"
+                    placeholder="Tell us about your book, your ambitions, the results you hope to achieve or the opportunity you would like to explore..."
+                    required
+                  ></textarea>
+
+                  <span class="field-hint">
+                    Start with the outcome that matters most to you.
+                    It is fine if your goals are still taking shape.
+                  </span>
+                </div>
+
+
+                <!-- MAIN CHALLENGE -->
+                <div class="form-field full">
+                  <label for="challenge">
+                    What would you most like help with? <span>*</span>
+                  </label>
+
+                  <select
+                    id="challenge"
+                    name="Main challenge"
+                    required
+                  >
+                    <option value="" disabled selected>
+                      Select the area closest to your situation
+                    </option>
+
+                    <option>Book visibility and discoverability</option>
+                    <option>Reaching the right readers</option>
+                    <option>Book presentation and positioning</option>
+                    <option>Marketing and commercial growth</option>
+                    <option>Publishing strategy and decisions</option>
+                    <option>International publishing opportunities</option>
+                    <option>Distribution and fulfilment</option>
+                    <option>Partnerships and business development</option>
+                    <option>Creative development and new formats</option>
+                    <option>Project planning and coordination</option>
+                    <option>Several connected challenges</option>
+                    <option>Something else</option>
+                  </select>
+                </div>
+
+
+                <!-- ADDITIONAL INFORMATION -->
+                <div class="form-field full">
+                  <label for="additional">
+                    Anything else we should know?
+                  </label>
+
+                  <textarea
+                    id="additional"
+                    name="Additional information"
+                    placeholder="Share any relevant background, deadlines, previous steps you have taken or other details that could help us understand your situation..."
+                  ></textarea>
+                </div>
+
+              </div>
+
+
+              <!-- SUBMIT -->
+              <button type="submit" class="form-submit">
+                Send your enquiry
+                <span aria-hidden="true">→</span>
               </button>
 
               <p class="form-note">
-                Selecting Submit will open your email application with
-                your enquiry prepared as a message to AuthorVeyra.
-                You will be able to review it before sending.
+                Your enquiry will be sent to AuthorVeyra by email.
+                Please do not include passwords, payment details
+                or confidential unpublished manuscript material
+                in this form.
               </p>
 
             </form>
@@ -371,56 +609,73 @@
           </div>
 
 
-          <!-- CONTACT INFORMATION -->
-          <aside class="contact-side">
+          <!-- CONTACT SIDEBAR -->
+          <aside class="contact-sidebar">
 
-            <div class="eyebrow">Get in touch</div>
+            <div class="eyebrow">A conversation, not a sales script</div>
 
-            <h2>Begin with a conversation.</h2>
+            <h2>Start with what matters to you.</h2>
 
             <p>
-              You do not need to arrive with a complete plan or a
-              clearly defined solution. Tell us what matters to you
-              and what you are trying to move forward.
+              You do not need to know exactly which service or
+              solution you need before getting in touch. Tell us
+              about the situation, and we can begin by understanding it.
             </p>
 
 
-            <div class="side-item">
-              <strong>Email</strong>
-              <a href="mailto:info@authorveyr.com">
-                info@authorveyr.com
-              </a>
+            <div class="sidebar-block">
+
+              <span class="sidebar-label">Email</span>
+
+              <h3>Reach our team</h3>
+
+              <p>
+                For general enquiries, you can also contact us directly:
+              </p>
+
+              <p>
+                <a href="mailto:info@authorveyr.com">
+                  info@authorveyr.com
+                </a>
+              </p>
+
             </div>
 
 
-            <div class="side-item">
-              <strong>What happens next?</strong>
-              <p>
-                We will review the information you share and consider
-                the nature of your enquiry, the requirements involved
-                and the most appropriate next step.
-              </p>
+            <div class="sidebar-block">
+
+              <span class="sidebar-label">What happens next</span>
+
+              <h3>A considered first step</h3>
+
+              <ul>
+                <li>We receive and review your enquiry.</li>
+                <li>We consider the goals and challenges you describe.</li>
+                <li>We respond to discuss relevant next steps.</li>
+                <li>Any proposed work and expectations are clarified before commitment.</li>
+              </ul>
+
             </div>
 
 
-            <div class="side-item">
-              <strong>Not sure what to ask?</strong>
+            <div class="sidebar-block">
+
+              <span class="sidebar-label">Our principle</span>
+
+              <h3>Understanding before recommendations.</h3>
+
               <p>
-                That is perfectly fine. You can explain the situation
-                in your own words. You do not need to diagnose the
-                problem before contacting us.
+                We believe a useful response begins with the actual
+                situation, not an assumption about what every author needs.
               </p>
+
             </div>
 
 
-            <div class="side-item">
-              <strong>Our approach</strong>
-              <p>
-                We believe a useful response begins with understanding
-                the author's actual needs, rather than assuming that
-                everyone requires the same solution.
-              </p>
-              <a href="approach.html">Discover our approach →</a>
+            <div class="contact-principle">
+              “The right way forward begins with understanding
+              where you are, what you want to achieve and what
+              needs to change.”
             </div>
 
           </aside>
@@ -431,60 +686,22 @@
     </section>
 
 
-    <!-- REASSURANCE SECTION -->
-    <section class="section white">
-      <div class="wrap split">
+    <!-- FINAL SECTION -->
+    <section class="contact-next">
+      <div class="wrap">
 
-        <div>
-          <div class="eyebrow">Your situation comes first</div>
+        <div class="eyebrow">Your work. Your ambitions. Your next step.</div>
 
-          <h2>There is no need to have everything figured out.</h2>
+        <h2>You don't have to have the whole answer before you begin.</h2>
 
-          <p class="lead">
-            Your enquiry does not need to fit into a predefined
-            service category.
-          </p>
-
-          <p>
-            We want to understand your objectives, the difficulties
-            you are encountering and the outcome you are working
-            towards. From there, we can consider whether the
-            requirements are within our capabilities or whether
-            specialist involvement may be appropriate.
-          </p>
-
-          <a class="btn" href="about.html">
-            Learn about AuthorVeyra
-          </a>
-        </div>
-
-
-        <div class="quote-panel">
-          <p>
-            “The right way forward begins with understanding
-            what matters to the author.”
-          </p>
-        </div>
-
-      </div>
-    </section>
-
-
-    <!-- FINAL CTA -->
-    <section class="section">
-      <div class="wrap" style="text-align:center;max-width:760px">
-
-        <div class="eyebrow">Your challenges. A way forward.</div>
-
-        <h2>Whenever you are ready, start the conversation.</h2>
-
-        <p class="lead">
-          Tell us where you are, what you want to achieve and
-          what is standing in the way.
+        <p>
+          Whether your challenge concerns one book or a wider publishing
+          ambition, a clear understanding of the situation is a valuable
+          place to start. Tell us what you are working towards.
         </p>
 
         <a class="btn" href="#enquiry-form">
-          Complete the enquiry form
+          Tell us about your situation
         </a>
 
       </div>
@@ -501,6 +718,7 @@
 
         <!-- COMPANY -->
         <div>
+
           <a class="brand" href="index.html">
             <img src="authorveyra-logo.png" alt="">
 
@@ -518,11 +736,13 @@
           <div class="tagline">
             Your challenges. A way forward.
           </div>
+
         </div>
 
 
         <!-- EXPLORE -->
         <div>
+
           <h4>Explore</h4>
 
           <div class="footlinks">
@@ -533,15 +753,18 @@
             <a href="publishing-support.html">Publishing Support</a>
             <a href="contact.html">Contact</a>
           </div>
+
         </div>
 
 
         <!-- SOCIAL -->
         <div>
+
           <h4>Connect with us</h4>
 
           <p>
-            Follow AuthorVeyra for ideas, updates and perspectives for authors.
+            Follow AuthorVeyra for ideas, updates and perspectives
+            for authors.
           </p>
 
           <div class="social-links">
@@ -553,13 +776,8 @@
               rel="noopener noreferrer"
               aria-label="AuthorVeyra on TikTok">
 
-              <svg viewBox="0 0 24 24" aria-hidden="true">
-                <path d="M19.59 6.69a4.83 4.83 0 0 1-3.77-4.25V2h-3.2v13.67a2.9 2.9 0 1 1-2.9-2.9c.3 0 .6.05.87.13V9.63a6.1 6.1 0 1 0 5.23 6.04V8.72a8 8 0 0 0 4.67 1.5V7.04c-.3 0-.6-.12-.9-.35Z"/>
-              </svg>
-
               TikTok
             </a>
-
 
             <a
               class="social-link"
@@ -568,87 +786,40 @@
               rel="noopener noreferrer"
               aria-label="AuthorVeyra on Substack">
 
-              <svg viewBox="0 0 24 24" aria-hidden="true">
-                <path d="M3 3h18v2H3V3Zm0 4h18v2H3V7Zm0 4h18v2H3v-2Zm0 4 9 6 9-6v-2H3v2Z"/>
-              </svg>
-
               Substack
             </a>
 
           </div>
+
         </div>
 
 
         <!-- INFORMATION -->
         <div>
+
           <h4>Information</h4>
 
           <div class="footlinks">
             <a href="refund-policy.html">Refund Policy</a>
             <a href="terms.html">Terms & Conditions</a>
+            <a href="mailto:info@authorveyr.com">Email AuthorVeyra</a>
           </div>
 
-          <p style="margin-top:20px">
-            <a href="mailto:info@authorveyr.com">
-              info@authorveyr.com
-            </a>
-          </p>
         </div>
 
       </div>
 
 
-      <div class="copyright">
-        <p>
+      <div style="margin-top:35px;padding-top:22px;border-top:1px solid rgba(255,255,255,.15);text-align:center">
+
+        <p style="font-size:13px;color:rgba(255,255,255,.7)">
           © 2026 AuthorVeyra. All rights reserved.
         </p>
+
       </div>
 
     </div>
   </footer>
-
-
-  <!-- EMAIL SUBMISSION -->
-  <script>
-    document.getElementById("authorEnquiryForm").addEventListener("submit", function(event) {
-      event.preventDefault();
-
-      const form = this;
-
-      if (!form.reportValidity()) {
-        return;
-      }
-
-      const data = new FormData(form);
-
-      const subject = "New AuthorVeyra Website Enquiry";
-
-      const message = [
-        "NEW AUTHORVEYRA WEBSITE ENQUIRY",
-        "",
-        "Full name: " + (data.get("Full name") || ""),
-        "Email address: " + (data.get("Email address") || ""),
-        "Book title: " + (data.get("Book title") || "Not provided"),
-        "Book or website link: " + (data.get("Book or website link") || "Not provided"),
-        "",
-        "AUTHOR'S GOALS:",
-        data.get("Your goals") || "",
-        "",
-        "MAIN CHALLENGE:",
-        data.get("Main challenge") || "",
-        "",
-        "ADDITIONAL INFORMATION:",
-        data.get("Additional information") || ""
-      ].join("\n");
-
-      const mailto =
-        "mailto:info@authorveyr.com" +
-        "?subject=" + encodeURIComponent(subject) +
-        "&body=" + encodeURIComponent(message);
-
-      window.location.href = mailto;
-    });
-  </script>
 
 </body>
 </html>
